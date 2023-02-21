@@ -11,10 +11,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "pinia": "^2.0.30",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@types/node": "^18.14.0",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "eslint": "^8.34.0",

@@ -12,7 +12,15 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    // 未设置 "baseUrl" 时，不容许应用非相对路径。
+    "baseUrl": "." ,
+    // TS 兼容处理配置路径
+    "paths":{
+      "@/*":[
+        "src/*"
+      ],
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue",".eslintrc.cjs","vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
