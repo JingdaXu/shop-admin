@@ -12,4 +12,8 @@
 // console.log(User)
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h1 {
+  color: $color
+}
+</style>
