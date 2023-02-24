@@ -8,6 +8,12 @@ module.exports = {
     'standard-with-typescript'
   ],
   overrides: [
+    {
+      files: ['src/api/**/*.ts']
+      // rules: [
+      //   camelcase: 'off'
+      // ]
+    }
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -21,6 +27,9 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    '@typescript-eslint/promise-function-async': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off'
+    // '@typescript-eslint/no-floating-promises': ['warn']
   }
 }

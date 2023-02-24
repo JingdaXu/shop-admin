@@ -3,12 +3,12 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/home',
     name: 'home',
-    component: async () => await import('@/views/home/index.vue')
+    component: () => import('@/views/home/index.vue')
   },
   {
-    path: '/',
+    path: '/login',
     name: 'login',
-    component: async () => await import('@/views/login/index.vue')
+    component: () => import('@/views/login/index.vue')
   }
 ]
 const router = createRouter({

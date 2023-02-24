@@ -8,8 +8,6 @@
 
 <script setup lang="ts">
 // import User from '@/api/user'
-
-// console.log(User)
 </script>
 
 <style lang="scss" scoped>
