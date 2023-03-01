@@ -1,6 +1,6 @@
 // 公共基础接口封装
 import request from '@/utils/request'
-
+import type { ILoginInfo } from './types/common'
 // 方法四需要该接口
 // interface ResponseData <T = any> {
 //   status: number
@@ -10,15 +10,19 @@ import request from '@/utils/request'
 
 export const getLoginInfo = () => {
   // 如果需要status和msg，修改utils里面的返回值
-  return request<{
-    logo_square: string
-    logo_rectangle: string
-    login_logo: string
-    slide: string[]
-  }>({
+  return request<ILoginInfo>({
     method: 'GET',
     url: '/login/info'
   })
+  // return request<{
+  //   logo_square: string
+  //   logo_rectangle: string
+  //   login_logo: string
+  //   slide: string[]
+  // }>({
+  //   method: 'GET',
+  //   url: '/login/info'
+  // })
 // 方法一
 //   return request({
 //     method: 'GET',
