@@ -1,14 +1,15 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import { createPinia } from 'pinia'
-
+// import { createPinia } from 'pinia'
+import elementPlus from './plugins/element-plus'
+import router from './router'
 // 加载全局样式
 import './styles/index.scss'
-// const a_b = 'dsa'
-// console.log(a_b)
-const pinia = createPinia()
-const app = createApp(App)
+// const pinia = createPinia()
 
-app.use(pinia)
-app.mount('#app')
+createApp(App)
+//   .use(pinia)
+  .use(router)
+  .use(elementPlus)
+  .mount('#app')

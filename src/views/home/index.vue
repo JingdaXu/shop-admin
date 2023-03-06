@@ -1,9 +1,8 @@
 <template>
-  <h1>首页</h1>
-  <img
-    src="@/assets/vue.svg"
-    alt=""
-  >
+  <h1>首页home</h1>
+  <el-button type="primary">
+    测试
+  </el-button>
 </template>
 
 <script setup lang="ts">
@@ -11,7 +10,5 @@
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  color: $color
-}
+
 </style>
