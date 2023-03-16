@@ -7,7 +7,7 @@
     text-color="#fff"
     @open="handleOpen"
     @close="handleClose"
-    :collapse="isCollapse"
+    :collapse="comStore.isCollapsed"
     router
   >
     <el-menu-item index="/">
@@ -46,14 +46,16 @@ import {
   Document,
   Menu as IconMenu
 } from '@element-plus/icons-vue'
-import { ref } from 'vue'
+import { commonStore } from '@/store/index'
+const comStore = commonStore()
+console.log(comStore.isCollapsed)
+
 const handleOpen = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
 const handleClose = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
-const isCollapse = ref(true)
 
 </script>
 
