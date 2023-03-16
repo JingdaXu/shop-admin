@@ -3,13 +3,12 @@
     <el-icon
       :size="size"
       :color="color"
+      @click="comStore.changeCollapsed"
     >
       <Expand
-        @click="comStore.changeCollapsed"
         v-if="comStore.isCollapsed"
       />
       <Fold
-        @click="comStore.changeCollapsed"
         v-else
       />
     </el-icon>
